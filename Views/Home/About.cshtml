@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<main aria-labelledby="title">
+    <h2 id="title">@ViewBag.Title.</h2>
+    <h3>@ViewBag.Message</h3>
+
+    @{
+        ViewBag.Title = "About Us";
+    }
+
+    <h2>About Us</h2>
+    <head>
+        <link href="@Url.Content("~/Content/site.css")" rel="stylesheet" type="text/css" />
+    </head>
+
+
+    <div>
+        <h3>Our Hotel</h3>
+        <p>Welcome to our luxury hotel, where comfort meets elegance. Our hotel is located in a prime location, offering breathtaking views and world-class amenities.</p>
+
+        <h3>Our Mission</h3>
+        <p>At our hotel, we strive to provide exceptional service and create memorable experiences for our guests. Whether you are here for business or leisure, our dedicated staff is committed to ensuring your stay is nothing short of extraordinary.</p>
+
+        <h3>Our Services</h3>
+        <ul>
+            <li>Luxurious and spacious rooms</li>
+            <li>24/7 concierge service</li>
+            <li>Fine dining restaurants</li>
+            <li>Fitness center and spa</li>
+            <li>Meeting and event spaces</li>
+            <li>Outdoor pool and sun deck</li>
+        </ul>
+    </div>
+</main>

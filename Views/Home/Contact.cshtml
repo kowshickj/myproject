@@ -1,0 +1,85 @@
+﻿@{
+    ViewBag.Title = "Contact Us";
+}
+
+<h2>Contact Us</h2>
+<head>
+    <link href="@Url.Content("~/Content/contact.css")" rel="stylesheet" type="text/css" />
+</head>
+
+<main>
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form id="contactForm" onsubmit="submitForm(event)">
+            <div class="form-group">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Business Email *</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <label for="hotel">Hotel Name *</label>
+                <input type="text" id="hotel" name="hotel" required>
+                <span class="error" id="hotelError"></span>
+            </div>
+            <div class="form-group">
+                <label for="countryCode">Country Code *</label>
+                <input type="text" id="countryCode" name="countryCode" required>
+                <span class="error" id="countryCodeError"></span>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone *</label>
+                <input type="text" id="phone" name="phone" required>
+                <span class="error" id="phoneError"></span>
+            </div>
+            <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" maxlength="255"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="captcha">Captcha *</label>
+                <input type="text" id="captcha" name="captcha" required>
+                <span class="error" id="captchaError"></span>
+                <div id="captchaImage"></div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="contactDetails" style="display: none;">
+            <h3>Thank you for contacting us!</h3>
+            <p>Your message has been received. Here are the details you provided:</p>
+            <p id="contactName"></p>
+            <p id="contactEmail"></p>
+            <p id="contactHotel"></p>
+            <p id="contactCountryCode"></p>
+            <p id="contactPhone"></p>
+            <p id="contactState"></p>
+            <p id="contactMessage"></p>
+        </div>
+    </div>
+
+</main>
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
+
+    <script src="contact.js"></script>
+
+
+
+<div class="contact-info">
+    <h3>Contact Information</h3>
+    <p>
+        Address: 123 Main Street, City, State, Zip Code<br />
+        Phone: 123-456-7890<br />
+        Email: info@examplehotel.com
+    </p>
+</div>
