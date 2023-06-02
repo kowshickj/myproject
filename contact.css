@@ -1,0 +1,66 @@
+﻿/* Add your CSS styles here */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgreen;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav {
+    /* Navigation styles */
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+.contact-form {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border .contact-info {
+    margin-top: 40px;
+    text-align: center;
+}
+
+    .contact-info h3 {
+        color: #555;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .contact-info p {
+        color: #777;
+        font-size: 16px;
+        line-height: 1.5;
+    }
